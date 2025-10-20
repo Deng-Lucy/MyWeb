@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Pets</title>
+    <style>
+        .top-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%; /* 确保顶栏宽度占满整个页面 */
+            height: 60px; /* 顶栏高度 */
+            background-color:rgb(173, 109, 122); /* 顶栏背景颜色 */
+            color: white; /* 顶栏文字颜色 */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px; /* 确保内容不贴边 */
+            z-index: 999;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 顶栏阴影 */
+        }
+
+        .top-bar .logo {
+            /* font-size: 1.5rem;
+            font-weight: bold;
+            margin-right: 30px; */
+            width: 100px; /* Adjust width as needed */
+            height: auto; /* Keep the aspect ratio */
+        }
+
+        .top-bar .menu-links {
+            display: flex;
+            gap: 8px; /* 减少间距，腾出更多空间 */
+            white-space: nowrap; /* 保证菜单项不换行 */
+            margin-right: 30px;
+
+        }
+
+        .top-bar .menu-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 1.2rem;
+            padding: 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .top-bar .menu-links a:hover {
+            background-color: rgba(255, 200, 200, 0.5); /* 悬停效果 */
+        }
+
+
+
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:center;
+            margin: 20px;
+        }
+
+        .gallery a {
+            flex-basis: calc(33.33% - 20px); 
+            margin-bottom: -30%; /* 减少垂直间距 */
+            text-align: center;
+        }
+
+        .gallery img {
+            width: 300px;
+            object-fit:fill;
+            padding-bottom: 100%; /* 使图片保持正方形 */
+            object-fit:cover
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        body{
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 style="text-align: center; margin-top: 100px; color: rgb(102, 94, 94);font-family: 'Times New Roman', Times, serif;">My Pets</h1>
+    <h2 style="color: rgb(186, 152, 119);font-family: 'Times New Roman', Times, serif;font-weight: 100;">Click the images to reveal their true forms!</h2>
+    <div class="gallery">
+        <a href="link1.html"><img src="./dongdong.PNG" alt="Image 1"></a>
+        <a href="link2.html"><img src="./maodou.PNG" alt="Image 2"></a>
+        <a href="link3.html"><img src="./changcheng.PNG" alt="Image 3"></a>
+        <a href="link4.html"><img src="./niuniunini.PNG" alt="Image 4"></a>
+        <a href="link5.html"><img src="./hongzhong.PNG" alt="Image 5"></a>
+        <a href="link6.html"><img src="./xiaoxiao.PNG" alt="Image 6"></a>
+    </div>
+
+    <div class="top-bar">
+        <div class="logo">
+            <img src="./logo.png" alt="My Logo" width="138px" height="85px" style="margin-top: 5px; margin-left: 0px;">
+        </div>
+        <div class="menu-links">
+            <a href="../main_page.html">Home</a>
+            <a href="./about_me.html">About Me</a>
+            <!-- <a href="./pets/my_pets.html">My pets</a> -->
+            <a href="#">Say Something</a>
+        </div>
+    </div>
+</body>
+</html>
