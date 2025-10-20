@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Home for Lucy Deng</title>
+    <style>
+        .top-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%; 
+            height: 60px; 
+            background-color:rgb(173, 109, 122);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px; 
+            z-index: 999;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+        }
+
+        .top-bar .logo {
+            /* font-size: 1.5rem;
+            font-weight: bold;
+            margin-right: 30px; */
+            width: 100px; 
+            height: auto; 
+        }
+
+        .top-bar .menu-links {
+            display: flex;
+            gap: 8px; 
+            white-space: nowrap;
+            margin-right: 30px;
+
+        }
+
+        .top-bar .menu-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 1.2rem;
+            padding: 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .top-bar .menu-links a:hover {
+            background-color: rgba(255, 200, 200, 0.5);
+        }
+
+
+        body {
+            /* font-family: 'Arial', sans-serif; */
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+
+        .container {
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; /* 水平方向居中 */
+            padding: 100px 40px;
+            width: 100vw; /* 宽度占满整个窗口 */
+            min-height: 100vh; /* 高度占满整个窗口 */
+            box-sizing: border-box;
+            padding-top: 80px;
+        }
+
+
+
+        .text-info-container {
+            display: flex;
+            flex-direction: column;
+            max-width: 70%; /* 确保文字部分最多占据页面的70% */
+            z-index: 10;
+            overflow-wrap: break-word; /* 确保长单词换行 */
+        }
+
+        .text-section {
+            margin-top: 100px;
+            z-index: 10;
+            text-align: left;
+            font-family:'Times New Roman', Times, serif;
+        }
+
+        .info-section {
+            text-align: left;
+            font-family:serif;
+        
+        }
+
+        .image-container {
+            z-index: -1;
+            text-align: right;
+            width: 100%; /* 设置图片容器宽度为100% */
+            overflow: hidden; /* 隐藏溢出部分 */
+        }
+
+        .image-container img {
+            z-index: -1;
+            display: flex;
+            position:absolute;
+            max-width: 100%;
+            margin-top: -61%;
+            margin-left: 35%;
+            width: 1300px;
+            height: 1000px;
+            object-fit:contain;
+            overflow: hidden;
+        }
+
+
+        h1 {
+            font-size: calc(5vw + 5vh); 
+            color: rgb(102, 94, 94);
+            font-weight: 900;
+            letter-spacing: 0.01em;
+            line-height: 0.9;
+            margin: 0;
+        }
+
+
+        .email {
+            color:rgb(186, 152, 119);
+            font-size: calc(0.5vw + 0.5vh);
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            /* font-style: italic; */
+            text-align: left;
+            margin-top: 70px;
+            line-height: 15px;
+            font-size: calc(1vw + 1.5vh);
+        }
+
+        .about-button {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color:rgb(173, 109, 122);
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            overflow: hidden;
+            width: 250px; 
+        }
+
+        .about-button:hover {
+            background-color: rgba(49, 148, 105, 0.2); 
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="text-info-container">
+            <!-- big title -->
+            <div class="text-section">
+                <h1>Digital Page</h1>
+                <h1>for</h1>
+                <h1>Lucy Deng</h1>
+            </div>
+
+            <!-- Info portion  -->
+            <div class="info-section">
+                <div class="email">
+                    <p>School Email: siyudeng@ucsb.edu</p>
+                    <p>Personal Email: 2929691520@qq.com</p>
+                </div>
+            </div>
+            <p style="width: 70%; font-style: italic; font-family: sans-serif;font-size: 20px;color: rgb(111, 108, 108)">Hi this is Lucy</p>
+            
+            <!-- button -->
+            <a href="./about_me.html" class="about-button">Click to know about me ➡️ </a>
+        </div>
+
+        <!-- image portion -->
+        <div class="image-container">
+            <img src="./CC_front_page.PNG" alt="Portfolio Image">
+        </div>
+
+        <div class="top-bar">
+            <div class="logo">
+                <img src="./logo.png" alt="My Logo" width="138px" height="85px" style="margin-top: 5px; margin-left: 0px;">
+            </div>
+            <div class="menu-links">
+                <a href="#">Home</a>
+                <a href="./about_me.html">About Me</a>
+                <a href="./pets/my_pets.html">My pets</a>
+                <a href="#">Say Something</a>
+            </div>
+        </div>
+        
+    </div>
+
+    
+</body>
+</html>
